@@ -1,0 +1,212 @@
+/*
+Main stylesheet
+
+Assignment: Website Standard Project - Project Analysis
+Student: Loubna Dufrane
+Date: 11/1/2013
+
+    Color theme from : https://kuler.adobe.com/Running-color-theme-506674/
+    
+    blue - #2C3540
+    light blue - #C9DBF2
+    light - #F2EBDC
+    tan - #BFB5A8
+    red - #731414
+
+alt red- #733F3F
+*/
+
+body{
+    margin:0 auto;
+    padding:0;
+    background: #F2EBDC;
+    font: 16px/1.5 Helvetica, Arial, sans-serif;
+    max-width: 960px;
+    color: #444;
+
+}
+
+/* links ------------------*/
+a{ 
+    color: #731414;
+    text-decoration:none;
+}
+a:visited{ 
+    text-decoration:underline;
+}
+a:hover{ 
+    color: #000;
+    text-decoration:underline;
+}
+a:active{ 
+    color: #2C3540;
+}
+
+/* headings ------------------*/
+
+h1{ 
+    float:left;
+    color: #733F3F;
+    font-size:3em;
+    font-weight:normal;
+}
+
+h2{
+    font-weight:normal;
+    line-height: 2;
+    color: #fff;
+    text-transform:capitalize;
+    background: #733F3F;
+    padding:0 15px;
+    margin-left:-2.09%;
+    display:inline-block;
+    -webkit-box-shadow:3px 3px 3px rgba(9,9,9, 0.2);
+    -moz-box-shadow:3px 3px 3px rgba(9,9,9, 0.2);
+    box-shadow:3px 3px 3px rgba(9,9,9, 0.2);
+}
+
+/* lists ------------------*/
+
+/*reset lists*/
+ul, li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+/* Containers ------------------*/
+
+.wrapper{
+    margin:10px auto;
+    width:95.833%; /* 920px */
+    padding: 10px 2.0833%; /*10px - 20px*/
+    background: #fff;
+    border:1px solid #BFB5A8;
+}
+section{
+
+    clear: both;
+}
+
+.content {
+    padding:30px ;
+}
+
+footer {
+    clear:both;
+    padding:10px 0;
+    margin-top:10px;
+    font-size:0.8em;
+    text-align:center;
+    border-top:1px solid #ccc;
+}
+
+/* header ------------------*/
+header{
+    min-height:100px;
+    border-bottom: 1px dotted #ccc;
+}
+
+/* Navigation ------------------*/
+nav ul{
+    float:right;
+    background: #2C3540;
+    margin-right:-2.33%;
+}
+
+nav li{
+    display:inline-block;
+}
+
+nav a{
+    display:block;
+    color: #fff;
+    padding:0 10px;
+    font-size:0.9em;
+    line-height:3;
+}
+nav a:hover{
+    background: #eee;
+}
+
+/* Project Info ------------------*/
+
+.project_info li{
+    float:left;
+    width:47.44272%;
+    margin:1px;
+    padding:0 1.164%;
+    line-height:2em;
+    border-bottom:1px dotted #eee;
+    
+}
+.project_info span{
+    float:left;
+    min-width:120px;
+    padding-right:5px;
+    text-transform:uppercase;
+    color: #aaa;
+    font-size:0.9em;
+}
+
+.project_info li:nth-child(5){
+    clear:both;
+    width:100%;
+    
+}
+/* Site Intent ------------------*/
+.site_intent_info{
+    clear:both;
+}
+.site_intent_info h3{
+    color: #733F3F;
+    float:left;
+    width: 30.25%;
+    padding:0 0 0 1%;
+    margin:0 1.08% 1px 0;
+    line-height:2;
+}
+.site_intent_info p{
+    float:left;
+    width: 64%;
+    padding: 10px 1.08%;
+    border-left: 10px solid #C9DBF2;
+}
+
+/*Profile info ------------------*/
+
+.profile_info{
+    float:left;
+    width:45.652173913043%;
+    padding:1.086956521739%;
+    margin: 1.086956521739%;
+    -webkit-box-shadow:0 0 5px rgba(0,0,0,0.2);
+    -moz-box-shadow:0 0 5px rgba(0,0,0,0.2);
+    box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+
+/*I just want to reduce the size of the images in the competitive_analysis container*/
+#competitive_analysis .profile_info img{
+    max-height:100px;
+    width:auto;
+}
+.profile_info ul{
+    clear:both;
+    margin-left:1.08%;
+}
+.profile_info li{
+    margin-bottom:1px;
+    padding: 0 1.08%;
+    font-size: 0.9em;
+    line-height:2em;
+    background:#f4f4f4;
+    border-left:10px solid #C9DBF2;
+}
+.profile_info li span{
+    font-weight:bold;
+}
+
+.profile_info small{
+    color: #bbb;
+    display:block;
+}
