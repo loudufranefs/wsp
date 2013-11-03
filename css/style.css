@@ -1,16 +1,14 @@
 /*
 Project:
-Color Scheme
+Color Scheme:
 
 */
-
-
-
-/* RESETS ------------------------*/
 
 /* LAYOUT ------------------------*/
 
 /* NAVIGATION------------------------*/
+
+nav li {display: inline;}
 
 /* TYPOGRAPHY ------------------------*/
 
