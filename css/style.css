@@ -1,17 +1,29 @@
 /*
-Project:
-Color Scheme:
+Project Name: St. Francis Hospital for Animals
+Designer: Loubna Dufrane
 
 */
 
 /* LAYOUT ------------------------*/
 
+/* TYPOGRAPHY ------------------------*/
+
+/* HEADER------------------------*/
+
 /* NAVIGATION------------------------*/
 
 nav li {display: inline;}
 
-/* TYPOGRAPHY ------------------------*/
+/* FOOTER ------------------------*/
+
+footer li {display: inline;}
 
 /* LISTS ------------------------*/
+
+.imagelist li { display:inline;}
+.imagelist li img {
+    max-width: 200px;
+    margin:2px;
+}
 
 /* MISC------------------------*/
