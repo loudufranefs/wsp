@@ -2,28 +2,692 @@
 Project Name: St. Francis Hospital for Animals
 Designer: Loubna Dufrane
 
+Color Scheme
+--------------
+color1 (seagreen): rgb(55,117,119) | #377577
+color2 (darkorange): rgb(249,122,20) | #F97A14
+color3 (light-tan): rgb(249,240,213) | #F9F0D5
+color4 (saddlebrown): rgb(127,67,23) | #7F4317
+color5 (skyblue): rgb(127,201,201) | #7FC9C9
+
+Additional Colors:
+color6 (lavendar): #e4f3f3 
 */
 
-/* LAYOUT ------------------------*/
 
+/* HTML ELEMENTS ------------------------*/
+body {
+    background-color: #F9F0D5;
+    background-image: url("../images/bg_orangepattern.png"), url("../images/bg_greenstripe.png"), url("../images/bg_pattern.png");
+    background-repeat: repeat-x, repeat-x, repeat;
+    background-position: 0 131px, 0 0, 0 0;
+    font: 16px/1.5 Helvetica, Arial, sans-serif;
+}
+
+
+
+blockquote, .highlight{
+    background: url("../images/bg_bluepattern.png");
+    padding:30px;
+    margin:10px 0;
+
+}
+
+p { 
+    padding:20px 20px 0 20px;
+    margin:auto;
+}
+
+/* LAYOUT ------------------------*/
+.container {
+    margin-top: 17px;
+}
+.content_wrapper {
+    background-image: -moz-linear-gradient(51% 0% -90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 51%, rgba(255, 255, 255, 0) 100%);
+    background-image: -webkit-gradient(linear, 51% 0%, 51% 64%, color-stop(0, rgb(255, 255, 255)), color-stop(0.51, rgb(255, 255, 255)), color-stop(1, rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(-90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 51%, rgba(255, 255, 255, 0) 100%);
+    background-image: -o-linear-gradient(-90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 51%, rgba(255, 255, 255, 0) 100%);
+    background-image: -ms-linear-gradient(-90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 51%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 51%, rgba(255, 255, 255, 0) 100%);
+    -moz-box-shadow: 0 -6px 4px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0 -6px 4px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 -6px 4px rgba(0, 0, 0, 0.08);
+    padding-bottom:130px;
+}
+/* LINKS ------------------------*/
+
+a:link {
+    color: #F97A14;
+    text-decoration: none;
+}
+a:visited {
+    color: #377577;
+    text-decoration: underline;
+}
+a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+a:active {
+    color: #F97A14;
+}
 /* TYPOGRAPHY ------------------------*/
+
+h1 {
+    font-family: lobster-two, georgia serif;
+    font-size:2.25em;
+    color: #fff;
+    font-weight: normal;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+    padding:0 3.092783505155%;
+    margin:10px auto;
+    /* 30px */
+}
+
+.home_title { font-size: 2em;}
+
+h2{
+    background: rgba(127,201,201, 0.2);
+    padding:5px 10px;
+    margin:20px;
+    font-weight:normal;
+    font-size: 1.7em;
+}
+
+h3{
+    font-size: 2em;
+    color: #377577;
+    font-weight:normal;
+    margin:15px 10px;
+}
 
 /* HEADER------------------------*/
 
+header {
+    padding-top: 5px;
+}
+.branding  a{
+    float: left;
+    background: url("../images/logo.png") no-repeat;
+    width: 245px;
+    height: 110px;
+    text-indent: -9999px;
+    direction: ltr;
+    margin-right:10px;
+}
+.branding p{
+    padding:55px 0 0 0;
+    font-weight:bold;
+    color: #323232;
+    vertical-align:bottom;
+}
+.branding p span{
+    display:block;
+}
+
+header small {
+    padding: 0 0 0 30px;
+    display: inline-block;
+    color: #333;
+}
 /* NAVIGATION------------------------*/
 
-nav li {display: inline;}
+nav {
+    margin-top: 15px;
+}
+nav ul {
+    min-height: 89px;
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+nav li {
+    float:left;
+    width: 16.66699%;
+    background-color: rgb(127, 201, 201);
+    background-image: -moz-linear-gradient(51% -38% -90deg, rgb(127, 201, 201) 0%, rgb(127, 201, 201) 47%, rgb(202, 235, 236) 100%);
+    background-image: -webkit-gradient(linear, 51% -38%, 51% 154%, color-stop(0, rgb(127, 201, 201)), color-stop(0.47, rgb(127, 201, 201)), color-stop(1, rgb(202, 235, 236)));
+    background-image: -webkit-linear-gradient(-90deg, rgb(127, 201, 201) 0%, rgb(127, 201, 201) 47%, rgb(202, 235, 236) 100%);
+    background-image: -o-linear-gradient(-90deg, rgb(127, 201, 201) 0%, rgb(127, 201, 201) 47%, rgb(202, 235, 236) 100%);
+    background-image: -ms-linear-gradient(-90deg, rgb(127, 201, 201) 0%, rgb(127, 201, 201) 47%, rgb(202, 235, 236) 100%);
+    background-image: linear-gradient(180deg, rgb(127, 201, 201) 0%, rgb(127, 201, 201) 47%, rgb(202, 235, 236) 100%);
+}
+
+nav li:hover, nav li.active{
+    background-image:-moz-linear-gradient(47% 0% -90deg,rgb(90,52,21) 0%,rgb(90,52,21) 21%,rgb(42,24,7) 100%); 
+    background-image:-webkit-gradient(linear,47% 0%,47% 100%,color-stop(0, rgb(90,52,21)),color-stop(0.21, rgb(90,52,21)),color-stop(1, rgb(42,24,7)));
+    background-image:-webkit-linear-gradient(-90deg,rgb(90,52,21) 0%,rgb(90,52,21) 21%,rgb(42,24,7) 100%);
+    background-image:-o-linear-gradient(-90deg,rgb(90,52,21) 0%,rgb(90,52,21) 21%,rgb(42,24,7) 100%);
+    background-image:linear-gradient(180deg,rgb(90,52,21) 0%,rgb(90,52,21) 21%,rgb(42,24,7) 100%);
+}
+
+nav a {
+    float: left;
+    width: 100%;
+    /* 164px*/
+    height: 39px;
+    text-align: center;
+    color: #377577;
+    padding-top: 50px;
+    border-left: 1px solid rgba(127, 201, 201, 0.8);
+    border-right: 1px solid rgba(202, 235, 236, 0.3);
+    background: url("../images/sprite_nav.png") top center no-repeat;
+}
+nav li:hover a, nav li.active a{color: #ffffff;}
+nav li:first-child a {
+    border-left: none;
+}
+nav li:last-child a {
+    border-right: none;
+}
+.nav_contact {
+    background-position: center -90px;
+}
+.nav_about {
+    background-position: center -228px;
+}
+.nav_resources {
+    background-position: center -366px;
+}
+.nav_client {
+    background-position: center -504px;
+}
+.nav_services {
+    background-position: center -642px;
+}
+.nav_home {
+    background-position: center -780px;
+}
+
+
+/* CALL TO ACTION ------------------------*/
+.cta div {
+    position: relative;
+    margin-top: -610px;
+    margin-bottom: 230px; /*fix the space that is created by this div */
+    left:58.862886597938%; /*970 - 360 - 40px padding */
+    padding: 10px 2.061855670103% 85px 2.061855670103%;
+    width: 37.113402061856%; /* 360px / 970px */
+    background-image: -moz-linear-gradient(52% 0% -90deg, rgb(255, 255, 255) 0%, rgb(237, 248, 248) 34%, rgb(202, 235, 236) 100%);
+    background-image: -webkit-gradient(linear, 52% 0%, 52% 58%, color-stop(0, rgb(255, 255, 255)), color-stop(0.34, rgb(237, 248, 248)), color-stop(1, rgb(202, 235, 236)));
+    background-image: -webkit-linear-gradient(-90deg, rgb(255, 255, 255) 0%, rgb(237, 248, 248) 34%, rgb(202, 235, 236) 100%);
+    background-image: -o-linear-gradient(-90deg, rgb(255, 255, 255) 0%, rgb(237, 248, 248) 34%, rgb(202, 235, 236) 100%);
+    background-image: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(237, 248, 248) 34%, rgb(202, 235, 236) 100%);
+    -webkit-box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* adds a gradient for the image, so that the image doesn't have to be saved as a png to mimic transpareny.*/
+.cta:after{
+    position:relative;
+    display:block;
+    width:100%;
+    height:100px;
+    z-index:2;
+    content: "";
+    margin-top:-100px;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(54%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 54%,rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 54%,rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 54%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 54%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+
+}
+.cta .btn_ribbon_right {
+    right: -35px;
+}
 
 /* FOOTER ------------------------*/
 
-footer li {display: inline;}
+footer {
+    background: url("../images/bg_greenstripe.png");
+    font-size: 0.8125em;
+    /* 13px */
+    clear: both;
+    padding: 10px 0;
+    color: #fff;
+    min-height:80px;
+}
+footer a:link, footer a:hover, footer a:visited {
+    color: #ffffff;
+}
+
+footer img:first-child {
+    position: relative;
+    margin-top: -151px;
+}
+
+footer li {
+    display: inline;
+}
 
 /* LISTS ------------------------*/
 
-.imagelist li { display:inline;}
-.imagelist li img {
-    max-width: 200px;
-    margin:2px;
+ul{
+    margin:0 20px;
+    padding:0;
+    list-style:none;
+}
+
+.btn_list li{
+    background: #7FC9C9;
+    line-height:2;
+    margin:3px 0;
+    text-align:center;
+}
+.btn_list li a{
+    color: #fff;
+}
+
+.btn_list li:hover{
+    background: #377577;
+}
+
+.formatted_list{
+    list-style:none;
+    margin: 0 0 20px 40px;
+    padding: 0;
+}
+
+.formatted_list li{
+    border-bottom:1px dotted #7FC9C9;
+    margin-bottom:10px;
+    padding-bottom:5px;
+    font-size: 1.1em;
+}
+.imagelist li {
+    float:left;
+    margin:10px 1.546391752577%;
+    width: 20.618556701031%;
+}
+.imagelist img {
+    width:100%;
+}
+
+ul.icons {
+    margin:0;
+}
+.icons li a {
+    background: url("../images/icons.png") top left no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    direction: ltr;
+}
+li.icons_youtube a {
+    width: 38px;
+    height: 38px;
+    background-position: -10px -10px;
+}
+li.icons_foursquare a {
+    width: 38px;
+    height: 38px;
+    background-position: -58px -10px;
+}
+li.icons_facebook a {
+    width: 38px;
+    height: 38px;
+    background-position: -106px -10px;
+}
+
+/* FORM ------------------------*/
+
+.form_container{
+    background: #F9F0D5;
+    padding:20px 0px;
+    margin:20px;
+}
+
+
+.form_container h3{
+    color: #fff;
+    background: #377577;
+    font-size:1em;
+    line-height:2em;
+    height:65px;
+    margin:0;
+}
+
+.form_container h3 span{
+    display:inline-block;
+    background: #7FC9C9;
+    font-size: 1.5625em;
+    float:left;
+    line-height:65px;
+    padding:0 10px;
+    margin-right:5px;
+}
+.form_container form{
+    margin:20px;
+}
+.form_container dt{margin-top:10px;}
+.form_container dd, .form_container p{ 
+    margin:0; 
+    padding:0;}
+
+input, textarea, select{
+    font-size:1em;
+    padding:5px;
+    border:1px solid #ccc;
+}
+
+.form_container textarea{
+    width:97%;
+}
+input#email{width:97%;}
+
+.form_group dl{ 
+    float:left;
+    width:48%;
+}
+.form_group dl:nth-child(2){ 
+    margin-left:4%;
+}
+.form_group dl input{ 
+    width:95%;
+}
+
+.submit_btn{
+    background-color:rgb(249,123,0);
+    width:177px;
+    height:46px;
+    -moz-border-radius:13%;
+    -webkit-border-radius:12%/50%;
+    border-radius:12%/50%;
+    color: #fff;
+}
+.reset_btn{
+    background:none;
+    border:none;
+    font-weight:bold;
+    line-height:120%;
+    text-decoration:underline;
+    color:rgb(127,67,23);
 }
 
 /* MISC------------------------*/
+
+a.btn_ribbon_right {
+    position: relative;
+    float: right;
+    background: url("../images/btn_ribbon_right.png") no-repeat;
+    width: 214px;
+    height: 87px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.125em;
+    line-height: 65px;
+    text-align: center;
+}
+a.btn_login {
+    background: url("../images/btn_ribbon.png") no-repeat 0px -5px;
+    width: 155px;
+    height: 45px;
+    display:inline-block;
+    text-align: center;
+    line-height: 45px;
+    color: #ffffff;
+    font-size: 0.8125em;
+}
+.btn_login:hover {
+    color: #ffffff;
+    background-position: 0 -65px;
+}
+a.tel {
+    font-size: 1.9em;
+    color: #333333;
+    background: url("../images/icon_tel.png") no-repeat left center;
+    display: inline-block;
+    padding-left: 30px;
+    line-height: 30px;
+    /* specific to icon height*/
+}
+
+a.more {
+    color: #F97A14;
+    float:right;
+}
+a.more:after{
+    content: "\00a0 \00bb"; /* &nbsp; &raquo; */
+}
+
+.icon_map{
+    text-indent:-9999px;
+    direction:ltr;
+    background: url("../images/icon_map.png") no-repeat center center;
+    width: 50px;
+    height: 50px;
+}
+
+.image_frame img{
+    border:3px solid #ffffff;
+    -webkit-box-shadow: 2px 2px 3px rgba(0,0,0, 0.3);
+    -moz-box-shadow: 2px 2px 3px rgba(0,0,0, 0.3);
+    -o-box-shadow: 2px 2px 3px rgba(0,0,0, 0.3);
+    box-shadow: 2px 2px 3px rgba(0,0,0, 0.3);
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -o-border-radius:3px;
+    border-radius:3px;
+    
+}
+.image_frame span{
+    position:relative;
+    float:right;
+    background: #e4f3f3;
+    bottom: 60px;
+    right:-20px;
+    padding:0 10px;
+    line-height:40px;
+    -webkit-box-shadow: -3px 3px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: -3px 3px 3px rgba(0,0,0,0.2);
+    -o-box-shadow: -3px 3px 3px rgba(0,0,0,0.2);
+    box-shadow: -3px 3px 3px rgba(0,0,0,0.2);
+}
+
+
+/* Helper Classes ------------------------*/
+
+.float_left {float:left;}
+.float_right {float:right;}
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Tablet Portrait size to Base 996px */
+
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+    
+    .branding p{
+        font-size:0.9em;
+    }
+    .cta div {
+        
+    margin-top: -470px;
+    margin-bottom: 60px;
+    }
+
+    iframe{
+    max-width:100%;
+    }
+    a.tel {
+        font-size: 1.1em;
+        line-height: 30px;
+    }
+
+    .home_title{ font-size: 1.5em;}
+    
+    .cta .btn_ribbon_right {
+    right: -30px;
+    }
+
+    
+    .formatted_list li{
+        font-size: 1em;
+    }
+
+    .image_frame span { font-size: 0.843em;}
+
+    .imagelist li {
+        width: 28.980412371134%;
+        max-height: 155px;
+    }
+
+    .cta:after{
+        display:none;
+    }
+
+    .form_container h3{
+            font-size:0.9em;
+        }
+    
+
+}
+/* Any Mobile to Tablet Portrait */
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-position: 0 310px, 0 0, 0 0;
+    }
+    header {
+        text-align: center;
+    }
+
+    header small{
+    padding:0;
+    text-align:center;
+    }
+    .branding a {
+        width: 100%;
+        background-position: center center;
+    }
+
+    .branding p { 
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    }
+    .branding p span {display:inline;}
+
+    .icons {
+        display: none;
+    }
+    .cta div{
+        float: none;
+        width: auto;
+        left: auto;
+        margin: auto;
+    }
+    .cta .btn_ribbon_right {
+        right: -24px;
+    }
+    .tel {
+        font-size: 1.3em;
+    }
+    a.btn_login {
+        display: block;
+        margin:auto;
+    }
+    nav li {
+        width: 32.9%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+    }
+    nav ul li:nth-child(3n) a {
+        border-right: none;
+    }
+    h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .home_title{font-size: 1.5em;}
+    footer {
+        text-align: center;
+    }
+    footer img:first-child {
+        display: none;
+    }
+    
+    .formatted_list li{
+        padding:5px 30px;
+        font-size: 1em;
+    }
+
+    iframe{
+    width:100%;
+    min-height:250px;
+    }
+
+    .imagelist li {
+        width: 46.680412371134%;
+    }
+
+    .cta:after{
+        display:none;
+    }
+
+    .form_group dl, .form_group dl input{ 
+        float:none;
+        width:auto;
+}
+    .form_group dl:nth-child(2){ 
+        margin-left:0;
+    }
+
+    .form_container h3{
+        height:auto;
+        margin:0;
+        text-align:center;
+    }
+    
+    .form_container h3 span{
+        display:block;
+        float:none;
+        padding:0;
+        margin-right:0;
+    }
+
+.float_left, .float_right {
+    float:none; 
+    clear:both; 
+    display:block; 
+    text-align:center; 
+    margin:auto;}
+
+}
+/* Mobile Portrait Size to Mobile Landscape Size */
+
+@media only screen and (max-width: 479px) {
+    body {
+        background-position: 0 320px, 0 0, 0 0;
+    }
+
+    .branding p{
+    font-size:0.8em;
+    font-weight:normal;
+    
+    }
+    nav {margin-top:25px;}
+    
+    nav li {
+        width: 49.39%;
+    }
+    nav ul li:nth-child(2n) a {
+        border-right: none;
+    }
+    h1 {
+        color: #377577;
+        margin-top:20px;
+    }
+    a.tel {
+        font-size: 2em;
+    }
+    .imagelist li {
+        width: 92.680412371134%;
+        max-height: 160px;
+    }
+}
