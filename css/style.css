@@ -592,14 +592,40 @@ a.more:after{
         display: block;
         margin:auto;
     }
-    nav li {
-        width: 32.9%;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+
+    nav ul{
+        width:416px;
+        position:absolute;
+        min-height: 50px;
     }
-    nav ul li:nth-child(3n) a {
-        border-right: none;
+
+    nav ul li{
+        width:100%;
+        height:50px;
+        display:none;
+        border:none;
+    }
+    nav ul:hover li {
+    display:block;
+    cursor:pointer;
+    
+}
+    nav ul li.active {
+        display:block;
+        background: #7F4317 url("../images/icon_menu.png") no-repeat 95% center;
+        font-size:1.2em;
+}
+    nav ul li a{
+        padding-top:0;
+        text-align:left;
+        padding-left:10px;
+        width:90%;
+        line-height:50px;
+        background:none;
+        border:none;
     }
     h1 {
+        margin-top:50px; /*clearing responsive nav*/
         font-size: 2em;
         text-align: center;
     }
@@ -614,7 +640,7 @@ a.more:after{
     
     .formatted_list li{
         padding:5px 30px;
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     iframe{
@@ -673,15 +699,11 @@ a.more:after{
     }
     nav {margin-top:25px;}
     
-    nav li {
-        width: 49.39%;
-    }
-    nav ul li:nth-child(2n) a {
-        border-right: none;
+    nav ul{
+        width:260px;;
     }
     h1 {
-        color: #377577;
-        margin-top:20px;
+        margin-top:50px;
     }
     a.tel {
         font-size: 2em;
