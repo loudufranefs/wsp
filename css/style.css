@@ -167,11 +167,14 @@ nav a {
     /* 164px*/
     height: 39px;
     text-align: center;
-    color: #377577;
     padding-top: 50px;
     border-left: 1px solid rgba(127, 201, 201, 0.8);
     border-right: 1px solid rgba(202, 235, 236, 0.3);
     background: url("../images/sprite_nav.png") top center no-repeat;
+}
+nav a:link{
+
+    color: #377577;
 }
 nav li:hover a, nav li.active a{color: #ffffff;}
 nav li:first-child a {
@@ -205,7 +208,7 @@ nav li:last-child a {
     position: relative;
     margin-top: -610px;
     margin-bottom: 230px; /*fix the space that is created by this div */
-    left:58.862886597938%; /*970 - 360 - 40px padding */
+    left:59.119886597938%; /*970 - 360 - 40px padding */
     padding: 10px 2.061855670103% 85px 2.061855670103%;
     width: 37.113402061856%; /* 360px / 970px */
     background-image: -moz-linear-gradient(52% 0% -90deg, rgb(255, 255, 255) 0%, rgb(237, 248, 248) 34%, rgb(202, 235, 236) 100%);
