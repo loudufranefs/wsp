@@ -750,11 +750,12 @@ a.more:after{
         float:none; 
         clear:both; 
         display:block;  
-    
+}
     
     ul.icons {
         position:relative;
     }
+
     ul.icons li {
        display:inline-block;
     }
