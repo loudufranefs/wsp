@@ -109,7 +109,7 @@
 
                     <div class="form_container">
                         <h3>
-                            <span>Contact Form</span><small>Ask questions and leave comments by filling out the form below.</small>
+                            <span>Contact Form</span><small>Schedule and appointment, ask questions or leave comments by filling out the form below.</small>
                         </h3>
                         <form id="contact_form" action="#" method="GET">
 
@@ -150,7 +150,7 @@
                                 </dt>
                                 <dd>
                                     <select name="department" id="department">
-                                        <option value="">Choose Department</option>
+                                        <option value="">Choose Department</option><option value="Schedule Appointment">Schedule Appointment</option>
                                         <option value="Veterinary Services">Veterinary Services</option>
                                         <option value="Reception">Reception</option>
                                         <option value="Billing">Billing</option>
@@ -159,7 +159,7 @@
                                 </dd>
 
                                 <dt>
-                                    <label for="message">How may we help you?</label>
+                                    <label for="message">How may we help you?<small>If scheduling an appointment, please type in the date you would like to come in.</small></label>
                                 </dt>
                                 <dd>
                                     <textarea id="message" name="message" rows="5" cols="30"></textarea>
@@ -169,7 +169,7 @@
 
 
                             <span class="float_right">
-                                <input type="submit" value="Send Message" name="submit" class="submit_btn">
+                                <input type="submit" value="Send Message" name="submit" class="btn">
                                 <input type="reset" value="Clear Form" class="reset_btn">
                             </span>
                         </form>

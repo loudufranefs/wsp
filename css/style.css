@@ -92,6 +92,7 @@ h2{
     margin:20px;
     font-weight:normal;
     font-size: 1.7em;
+    text-transform:capitalize;
 }
 
 h3{
@@ -267,6 +268,13 @@ footer img:first-child {
 
 footer li {
     display: inline;
+    border-right:1px solid rgba(255,255,255, 0.5);
+    margin:0 5px;
+    
+}
+footer li:last-child{
+    border:none;
+    
 }
 
 /* LISTS ------------------------*/
@@ -278,17 +286,21 @@ ul{
 }
 
 .btn_list li{
-    background: #7FC9C9;
-    line-height:2;
+    background: #377577;
+    line-height:2.4;
     margin:3px 0;
     text-align:center;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
 }
 .btn_list li a{
     color: #fff;
 }
 
 .btn_list li:hover{
-    background: #377577;
+    background: #7FC9C9;
+    color: #377577;
 }
 
 .formatted_list{
@@ -301,7 +313,6 @@ ul{
     border-bottom:1px dotted #7FC9C9;
     margin-bottom:10px;
     padding-bottom:5px;
-    font-size: 1.1em;
 }
 .imagelist li {
     float:left;
@@ -317,6 +328,11 @@ ul.icons {
     position:fixed;
     top:40%;
     left: 0px;
+    z-index:3;
+}
+ul.icons li {
+    border:none;
+    margin:0;
 }
 .icons li a {
     background: url("../images/icons.png") top left no-repeat;
@@ -383,6 +399,11 @@ li.icons_facebook a {
 .form_container form{
     margin:20px;
 }
+.form_container form small{
+    display:block;
+    font-style:italic;
+    color: #555;
+}
 .form_container dt{margin-top:10px;}
 .form_container dd, .form_container p{ 
     margin:0; 
@@ -410,15 +431,7 @@ input#email{width:97%;}
     width:95%;
 }
 
-.submit_btn{
-    background-color:rgb(249,123,0);
-    width:177px;
-    height:46px;
-    -moz-border-radius:13%;
-    -webkit-border-radius:12%/50%;
-    border-radius:12%/50%;
-    color: #fff;
-}
+
 .reset_btn{
     background:none;
     border:none;
@@ -429,7 +442,27 @@ input#email{width:97%;}
 }
 
 /* MISC------------------------*/
+a.btn, .btn{
+    display:inline-block;
+    padding:10px 20px;
+    color: #ffffff;
+    font-size:1.1em;
+    text-align:center;
+    background-image:-moz-linear-gradient(50% 0% -90deg,rgb(249,141,0) 0%,rgb(249,128,13) 63%,rgb(249,122,20) 100%); 
+    background-image:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(0, rgb(249,141,0)),color-stop(0.63, rgb(249,128,13)),color-stop(1, rgb(249,122,20)));
+    background-image:-webkit-linear-gradient(-90deg,rgb(249,141,0) 0%,rgb(249,128,13) 63%,rgb(249,122,20) 100%);
+    background-image:-o-linear-gradient(-90deg,rgb(249,141,0) 0%,rgb(249,128,13) 63%,rgb(249,122,20) 100%);
+    background-image:linear-gradient(180deg,rgb(249,141,0) 0%,rgb(249,128,13) 63%,rgb(249,122,20) 100%);
+    border:1px solid rgb(249,141,0);
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    -moz-box-shadow:0px 0px 2px rgba(0,0,0,0.26) ,inset 0px 0px 0px rgba(255,255,255,0.39);
+    -webkit-box-shadow:0px 0px 2px rgba(0,0,0,0.26) ,inset 0px 0px 0px rgba(255,255,255,0.39);
+    box-shadow:0px 0px 2px rgba(0,0,0,0.26) ,inset 0px 0px 0px rgba(255,255,255,0.39);
 
+
+}
 a.btn_ribbon_right {
     position: relative;
     float: right;
@@ -695,12 +728,19 @@ a.more:after{
         margin-right:0;
     }
 
-.float_left, .float_right {
-    float:none; 
-    clear:both; 
-    display:block; 
-    text-align:center; 
-    margin:auto;}
+    .float_left, .float_right {
+        float:none; 
+        clear:both; 
+        display:block;  
+    
+    
+    ul.icons {
+        position:relative;
+    }
+    ul.icons li {
+       display:inline-block;
+    }
+
 
 }
 /* Mobile Portrait Size to Mobile Landscape Size */
