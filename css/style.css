@@ -314,13 +314,25 @@ ul{
 
 ul.icons {
     margin:0;
+    position:fixed;
+    top:40%;
+    left: 0px;
 }
 .icons li a {
     background: url("../images/icons.png") top left no-repeat;
-    display: inline-block;
+    display: block;
     text-indent: -9999px;
     direction: ltr;
+    margin-left:-3px;
 }
+.icons li a:hover {
+    -webkit-box-shadow:0 0 3px #fff;
+    -moz-box-shadow:0 0 3px #fff;
+    -o-box-shadow:0 0 3px #fff;
+    box-shadow:0 0 3px #fff;
+    margin-left:-2px;
+}
+
 li.icons_youtube a {
     width: 38px;
     height: 38px;
@@ -350,7 +362,6 @@ li.icons_facebook a {
     color: #fff;
     background: #377577;
     font-size:1em;
-    line-height:2em;
     height:65px;
     margin:0;
 }
@@ -363,6 +374,11 @@ li.icons_facebook a {
     line-height:65px;
     padding:0 10px;
     margin-right:5px;
+}
+
+.form_container h3 small{
+    display:block;
+    padding:10px;
 }
 .form_container form{
     margin:20px;
@@ -463,7 +479,7 @@ a.more:after{
     direction:ltr;
     background: url("../images/icon_map.png") no-repeat center center;
     width: 50px;
-    height: 50px;
+    height: 61px;
 }
 
 .image_frame img{
@@ -575,10 +591,9 @@ a.more:after{
     margin-bottom: 10px;
     }
     .branding p span {display:inline;}
-
-    .icons {
-        display: none;
-    }
+    
+    .icons{ position:relative;}
+    
     .cta div{
         float: none;
         width: auto;
