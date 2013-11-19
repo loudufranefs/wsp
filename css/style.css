@@ -448,6 +448,7 @@ a.btn, .btn{
     color: #ffffff;
     font-size:1.1em;
     text-align:center;
+    background-color:rgb(249,128,13);
     background-image:-moz-linear-gradient(50% 0% -90deg,rgb(249,141,0) 0%,rgb(249,128,13) 63%,rgb(249,122,20) 100%); 
     background-image:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(0, rgb(249,141,0)),color-stop(0.63, rgb(249,128,13)),color-stop(1, rgb(249,122,20)));
     background-image:-webkit-linear-gradient(-90deg,rgb(249,141,0) 0%,rgb(249,128,13) 63%,rgb(249,122,20) 100%);
@@ -547,6 +548,19 @@ a.more:after{
 
 .float_left {float:left;}
 .float_right {float:right;}
+
+
+
+
+/* =============================================================================
+   Browser Fallbacks
+   ========================================================================== */
+
+/* IE7 and IE8 */
+.lt-ie9 body{
+background: url("../images/bg_ie.png") repeat-x top left;
+}
+
 
 /* =============================================================================
    Media Queries
