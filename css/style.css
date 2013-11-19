@@ -558,7 +558,11 @@ a.more:after{
 
 /* IE7 and IE8 */
 .lt-ie9 body{
-background:#f2efed  url("../images/bg_ie8.png") repeat-x top left;
+    background:#f2efed  url("../images/bg_ie8.png") repeat-x top left;
+}
+
+.lt-ie9 .content_wrapper{
+    background-color:#ffffff;
 }
 
 
