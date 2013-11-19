@@ -227,12 +227,15 @@ nav li:last-child a {
 
 
 /* CALL TO ACTION ------------------------*/
+.cta{
+    position:relative;
+}
+
 .cta div {
-    position: relative;
-    margin-top: -550px;
-    margin-bottom: 190px; /*fix the space that is created by this div */
+    position: absolute;
+    top:10px;
     left:58.911116597938%; /*970 - 360 - 40px padding */
-    padding: 10px 2.061855670103% 85px 2.061855670103%;
+    padding: 10px 2.061855670103% 15px 2.061855670103%;
     width: 37.113402061856%; /* 360px / 970px */
     background-color: rgb(255, 255, 255); /* fallbak for browser not supporting CSS gradients. */
     background-image: -moz-linear-gradient(52% 0% -90deg, rgb(255, 255, 255) 0%, rgb(237, 248, 248) 34%, rgb(202, 235, 236) 100%);
@@ -565,6 +568,13 @@ a.more:after{
     background-color:#ffffff;
 }
 
+/* IE7 */
+.lt-ie8 nav ul li{
+    display:inline;
+    zoom:1;
+}
+
+
 
 /* =============================================================================
    Media Queries
@@ -583,8 +593,6 @@ a.more:after{
         font-size:0.9em;
     }
     .cta div {
-        
-    margin-top: -425px;
     margin-bottom: 60px;
     width:49%;
     left:47%; /*970 - 360 - 40px padding */
@@ -661,7 +669,9 @@ a.more:after{
         float: none;
         width: auto;
         left: auto;
-        margin: auto;
+        margin: 0 auto 30px auto;
+        position:relative;
+        padding-bottom:85px;
     }
     .cta .btn_ribbon_right {
         right: -24px;
@@ -678,6 +688,7 @@ a.more:after{
         width:416px;
         position:absolute;
         min-height: 50px;
+        z-index:3;
     }
 
     nav ul li{
@@ -749,13 +760,9 @@ nav ul li.active a{
        clear:left;
     }
 
-    .cta:after{
-        display:none;
-    }
-
     .form_group dl, .form_group dl input{ 
         float:none;
-        width:auto;
+        width:98%;
 }
     .form_group dl:nth-child(2){ 
         margin-left:0;
@@ -776,9 +783,18 @@ nav ul li.active a{
     ul.icons li {
        display:inline-block;
     }
+    .form_container{
+        margin:auto;
+    }
+
+    .form_container input,
+    .form_container select{
+        width:95%;
+    }
 
 
-.form_container h3{
+
+    .form_container h3{
         font-size:1.2em;
         line-height:3em;
         min-height:50px;
@@ -816,8 +832,10 @@ nav ul li.active a{
     }
 
 
-.form_container h3{
+`   .form_container h3{
         line-height:1.5em;
     }
+
+    a.btn{font-size:1em;}
 
 }
