@@ -28,7 +28,7 @@ body {
 
 blockquote, .highlight{
     background: url("../images/bg_bluepattern.png");
-    margin:15px 4.061855670103%;
+    margin:15px 5.061855670103%;
     width:82.481203007519%;
     padding:20px 4.061855670103%;
 
@@ -41,7 +41,7 @@ blockquote small{
     display:block;
 }
 p { 
-    padding:15px 4.061855670103%;
+    padding:15px 30px;
     margin:auto;
 }
 p:first-child{
@@ -99,7 +99,7 @@ h1 {
 h2{
     background: rgba(127,201,201, 0.2);
     padding:5px 10px;
-    margin:15px 0px  4.061855670103%  4.061855670103%;
+    margin:15px 0px  5.061855670103%  5.061855670103%;
     font-weight:normal;
     font-size: 1.7em;
     text-transform:capitalize;
@@ -118,7 +118,7 @@ h3{
     font-size: 1.5em;
     color: #377577;
     font-weight:normal;
-    margin:10px  4.061855670103%;
+    margin:10px  5.061855670103%;
 }
 
 /* HEADER------------------------*/
@@ -235,7 +235,7 @@ nav li:last-child a {
     position: absolute;
     top:10px;
     left:58.911116597938%; /*970 - 360 - 40px padding */
-    padding: 10px 2.061855670103% 15px 2.061855670103%;
+    padding: 2px 2.061855670103% 10px 2.061855670103%;
     width: 37.113402061856%; /* 360px / 970px */
     background-color: rgb(255, 255, 255); /* fallbak for browser not supporting CSS gradients. */
     background-image: -moz-linear-gradient(52% 0% -90deg, rgb(255, 255, 255) 0%, rgb(237, 248, 248) 34%, rgb(202, 235, 236) 100%);
@@ -313,7 +313,7 @@ ul{
 
 .formatted_list{
     list-style:none;
-    margin: 0 4.546391752577%;
+    margin: 0 0 0 5.546391752577%;
     padding: 0;
 }
 
@@ -784,7 +784,7 @@ nav ul li.active a{
        display:inline-block;
     }
     .form_container{
-        margin:auto;
+        margin:auto 4.546391752577%;
     }
 
     .form_container input,
