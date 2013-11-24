@@ -11,7 +11,7 @@ color4 (saddlebrown): rgb(127,67,23) | #7F4317
 color5 (skyblue): rgb(127,201,201) | #7FC9C9
 
 Additional Colors:
-color6 (lavendar): #e4f3f3 
+color6 (lavendar): #e4f3f3
 */
 
 
@@ -253,6 +253,38 @@ nav li:last-child a {
 .cta .btn_ribbon_right {
     right: -35px;
 }
+
+/* 404 page ------------------------*/
+.page_404 section {
+    margin:auto; 
+    width:500px; 
+    max-width:90%;
+    text-align:center;}
+
+.page_404 h1 {
+    font: 6em helvetica, arial, sans-serif;
+    color: #7FC9C9;
+    text-shadow:none;
+    border-bottom: 1px dotted #7FC9C9;
+}
+
+.page_404 h2 {
+    border:none;
+    padding:auto;
+    background:none;
+    text-transform:none;
+}
+
+.page_404 h2 span {
+    color: red;
+    display:block;
+    text-transform:uppercase;
+    font-size:0.8em;
+}
+.page_404 a {
+    font-weight:bold;
+}
+
 
 /* FOOTER ------------------------*/
 
