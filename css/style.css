@@ -256,10 +256,14 @@ nav li:last-child a {
 
 /* 404 page ------------------------*/
 .page_404 section {
-    margin:auto; 
     width:500px; 
     max-width:90%;
-    text-align:center;}
+    text-align:center;
+    background: url("../images/bg_bluepattern.png") repeat left top;
+    padding:20px;
+    margin:20px auto;
+    
+    }
 
 .page_404 h1 {
     font: 6em helvetica, arial, sans-serif;
