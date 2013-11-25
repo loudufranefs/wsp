@@ -274,7 +274,7 @@ nav li:last-child a {
 
 .page_404 h2 {
     border:none;
-    padding:auto;
+    padding:0;
     background:none;
     text-transform:none;
 }
